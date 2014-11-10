@@ -1,0 +1,3 @@
+﻿#1 - (a) Supports Deposit and Withdraw Actions.
+     (b) Supports Main balance reteriving.
+     (c) Supports Interest management on 30 day basis, not month(due to Feburary).
