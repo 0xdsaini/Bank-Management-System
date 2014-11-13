@@ -1,3 +1,7 @@
 ﻿#1 - (a) Supports Deposit and Withdraw Actions.
      (b) Supports Main balance reteriving.
      (c) Supports Interest management on 30 day basis, not month(due to Feburary).
+
+#2 - (a) Supports Persistance of accounts data[Implemented using JSON].
+     (b) Updated _interest_ function to update time variable each time when it is called to make it function properly.
+     (c) Few other updates. Use diff to find.
