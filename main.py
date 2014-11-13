@@ -26,7 +26,35 @@ def load():
 
 class Manage(object):
     """Class for managing deposit, withdraw, interest and
-       for getting balance details."""
+       for getting balance details.
+
+       For eg:-
+
+       >>> my_name = Manage("Your Name", 100000)
+       
+       >>> my_name.get_balance()
+       100000
+       
+       >>> my_name.deposit(5000)
+       >>> my_name.get_balance()
+       105000
+
+       >>> my_name.withdraw(15000)
+       >>> my_name.get_balance()
+       95000
+
+       >>> my_name._save_()
+       True
+
+       Now, after 1 day, if you check for balance...
+
+       >>> my_name = Manage(None, migrate=True)
+       >>> my_name.get_balance()
+       95095
+
+       This is what it also manages "interest".
+
+       """
 
     def __init__(self, name, init_balance=0, ac_type=1, migrate=None):
 
@@ -39,7 +67,7 @@ class Manage(object):
         self.name = name #Name of AC Holder.
 
         if isinstance(init_balance, (int, long, float)):
-            #Changing type to <type float> assures for more precise calculations.
+            #Changing type to "float" assures for more precise calculations.
             self.main_balance = float(init_balance) #Initial balance in account.
 
         else:
