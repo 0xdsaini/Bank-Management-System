@@ -101,7 +101,7 @@ class Manage(object):
         self._update_()
 
         output = save(self.name, self.main_balance, self.ac_type,
-                  self.last_interest_time)
+                      self.last_interest_time)
 
         return output
 
