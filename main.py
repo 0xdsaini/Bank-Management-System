@@ -121,7 +121,7 @@ class Manage(object):
         #Time difference between creation time and today's time.
         diff_time = new_interest_time - self.last_interest_time
 
-		#We have to update last time of interest with current time.
+        #We have to update last time of interest with current time.
         self.last_interest_time = new_interest_time 
 
         #No. of days(24 hrs) passed from last_interest_time till now.
