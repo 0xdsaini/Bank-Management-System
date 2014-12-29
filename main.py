@@ -118,13 +118,13 @@ class Manage(object):
 
         new_interest_time = time.time()
 
-        #Time difference between creation time and today's time.
+        #Time difference between last interest time and current time.
         diff_time = new_interest_time - self.last_interest_time
 
-        #We have to update last time of interest with current time.
+        #Updating the last interest time with current time.
         self.last_interest_time = new_interest_time 
 
-        #No. of days(24 hrs) passed from last_interest_time till now.
+        #days = No. of days(24 hrs) passed from last_interest_time till now.
         days = diff_time//(60*60*24)
 
         #Interest rate today on 'day' basis.
