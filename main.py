@@ -161,7 +161,7 @@ class Manage(object):
         else:
             raise ValueError("Invalid amount.")
 
-    def get_balance(self):
+    def get_bal(self):
         """Returns current main balance"""
 
         self._update_()
